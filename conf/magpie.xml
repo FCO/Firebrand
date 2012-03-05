@@ -18,5 +18,7 @@
                 </parameters>
             </add>
         </match>
+        <add class="Plack::Middleware::ETag" />
+        <add class="Plack::Middleware::ConditionalGET" />
     </pipeline>
 </application>
